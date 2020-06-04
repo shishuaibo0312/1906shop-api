@@ -39,4 +39,27 @@ class TestController extends Controller
         $res=shell_exec($cmd);
         var_dump($res);
     }
+
+
+    //抽奖的简单设计
+     function lucky(){
+     	return view('lucky');
+     }
+
+    //判断是否中奖
+    function getlucky(){
+    	$lucky_num=rand(1,1000);
+    	//return $lucky_num;
+    	if($lucky_num==1){
+    		$result='恭喜您抽中一等奖';
+    	}else if($lucky_num==2 || $lucky_num==3){
+    		$result='恭喜您抽中二等奖';
+    	}else if($lucky_num==4 || $lucky_num==5 || $lucky_num==6){
+    		$result='恭喜您抽中三等奖';
+    	}else{
+    		$result='谢谢参与';
+    	}
+
+    	return $result;
+    }
 }

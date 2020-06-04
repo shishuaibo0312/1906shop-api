@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>抽奖活动</title>
+</head>
+<body>
+<h1 style="color:#00ffff" align="center">欢迎参加此次抽奖活动</h1>
+<img src="/3d27bb59760e02f00896bee6de5aad41.jpg" width="300px" height="300px">
+<h2></h2>
+<button style="color:green" id="lucky">点击进行抽奖</button>
+</body>
+</html>
+<script src="/jquery.js"></script>
+<script>
+	$(function(){
+		$(document).on('click','#lucky',function(){
+			 $.post({
+                method: "POST",
+                url: "/getlucky",
+            }).done(function(res) {
+                console.log(res);
+                alert(res)
+            });
+		})
+	})
+	
+	
+</script>
