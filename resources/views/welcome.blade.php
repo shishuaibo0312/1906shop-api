@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    SHOPAPI
+                    API接口
                 </div>
 
                 <div class="links">
