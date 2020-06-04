@@ -34,9 +34,9 @@ class TestController extends Controller
     //git推送到github后浏览器自动拉取pull
     function pull(){
     	echo "自动上线";
-        // $cmd=('cd /wwwroot/api && git pull');
-        // //var_dump($cmd);
-        // $res=shell_exec($cmd);
-        // var_dump($res);
+        $cmd=('cd /wwwroot/api && git pull');
+        //var_dump($cmd);
+        $res=shell_exec($cmd);
+        var_dump($res);
     }
 }
