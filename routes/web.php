@@ -17,3 +17,8 @@ Route::get('/', function () {
 
 Route::post('login','Api\UserController@login');  //登录
 Route::post('logout','Api\UserController@logout');  //退出
+Route::get('test','Api\UserController@test');  //退出
+
+Route::get('seckill','TestController@seckill');   //秒杀行动
+Route::get('pull','TestController@pull');  //退出
+
