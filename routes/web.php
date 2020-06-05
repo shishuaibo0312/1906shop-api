@@ -20,7 +20,7 @@ Route::post('logout','Api\UserController@logout');  //退出
 Route::get('test','Api\UserController@test');  //退出
 
 Route::get('seckill','TestController@seckill');   //秒杀行动
-Route::get('pull','TestController@pull');  //代码自动上线
+Route::post('pull','TestController@pull');  //代码自动上线
 
 
 Route::get('lucky','TestController@lucky');  //抽奖活动
